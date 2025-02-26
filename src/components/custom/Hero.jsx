@@ -16,7 +16,7 @@ function Hero() {
         <Button> Get Started, It's Free </Button>
       </Link>
 
-      <img src='/landing.png' className='' />
+      <img src='/placeholder.jpg' className='rounded-md' />
     </div>
   )
 }

@@ -12,7 +12,7 @@ function PlacesToVisit({ trip }) {
             <h2 className="font-medium text-lg">{item.day}</h2>
             <div className="grid md:grid-cols-2 gap-5">
               {item.plan.map((place, index) => (
-                <div>
+                <div className="">
                   <h2 className="font-medium text-sm text-orange-600">
                     {place.time}
                   </h2>
