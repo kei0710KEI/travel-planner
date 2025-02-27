@@ -159,7 +159,7 @@ function CreateTrip() {
 
       <div>
         <h2 className="text-xl my-3 font-medium">What is your Budget?</h2>
-        <div className="grid grid-cols-3 gap-5 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
           {SelectBudgetOptions.map((item, index) => (
             <div
               key={index}
@@ -181,7 +181,7 @@ function CreateTrip() {
         <h2 className="text-xl my-3 font-medium">
           Who do you plan on traveling with on your next adventure?
         </h2>
-        <div className="grid grid-cols-3 gap-5 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
           {SelectTravelesList.map((item, index) => (
             <div
               key={index}
