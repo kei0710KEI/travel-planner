@@ -66,6 +66,8 @@ function CreateTrip() {
       toast("Please fill all details");
       return;
     }
+    toast("Please wait...");
+
     setLoading(true);
     const FINAL_PROMPT = AI_PROMPT.replace(
       "{location}",
@@ -79,6 +81,7 @@ function CreateTrip() {
     const result = await chatSession.sendMessage(FINAL_PROMPT);
 
     console.log("--", result?.response?.text());
+
     setLoading(false);
     SaveAiTrip(result?.response?.text());
   };
